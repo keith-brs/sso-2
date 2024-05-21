@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form id="samlForm" method="POST" action="{{target}}">
+        <input type="hidden" name="SAMLResponse" value="{{samlResponse}}">
+    </form>
+    <script>
+        document.getElementById('samlForm').submit();
+    </script>
+</body>
+</html>

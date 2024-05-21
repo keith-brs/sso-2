@@ -1,0 +1,26 @@
+{
+  "name": "sso-2",
+  "version": "1.0.0",
+  "description": "practicing saml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "app1": "nodemon serviceProviders/app1/server.js",
+    "app2": "nodemon serviceProviders/app2/server.js",
+    "app3": "nodemon serviceProviders/app3/server.js"
+  },
+  "author": "Keith Tharp",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "fast-xml-parser": "^4.4.0",
+    "nodemon": "^3.1.0",
+    "xmlbuilder": "^15.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

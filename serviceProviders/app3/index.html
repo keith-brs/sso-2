@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 3</title>
+    <link rel="stylesheet" href='/styles/styles.css'>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to App 3</h1>
+        <div id="login-notice">
+            <p>You must be logged in with Level 3 authorization or higher to view this page.</p>
+            <button onclick="location.href='http://localhost:5005/idp/?target=http://localhost:3003/consume'">Login</button>
+        </div>
+        <div id="authenticated" class="hidden">
+            <div id="authorized">
+                <p>Hello <span id="username"></span>, you have successfully logged in with level 3 authorization!</p>
+            </div>
+            <div>
+                <button id='landing-page-button'>Landing Page</button>
+            </div>
+        </div>
+        <div id="not-authorized" class="hidden">
+            <p>Access denied!!</p>
+            <p>You must have level 3 or higher authorization to view this page</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
